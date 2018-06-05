@@ -1,0 +1,21 @@
+<ion-view title="Le ultime notizie" id="page4">
+  <ion-content padding="true" class="has-header">
+    <div ng-repeat="story in stories">
+      <div class="list card">
+        <div class="item">
+          <h2 style="color:#2a388f;font-weight:bold;">{{story.title}}</h2>
+          <p>Pubblicato: {{story.data | amCalendar}}</p>
+        </div>
+        <div class="item item-body">
+        <span ng-if="story.image_0">
+          <img class="full-image" ng-src="http://avis-nicosia.enjinia.it/uploads/{{story.image_0}}">
+        </span>
+          <p>{{story.summary}} </p>
+          <p>
+            <a ui-sref="notizia({ notiziaID: {{story.id}} })" class="subdued" style="color:#2a388f"><b>approfondisci</b></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

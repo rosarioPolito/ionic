@@ -1,0 +1,301 @@
+<ion-view id="page2">
+
+    <ion-content padding="false" class="has-header" style="background-image:url(img/background.jpg); background-repeat:none;">
+        <div id="blurDiv" ng-class="{ blur: clicked }">
+
+            <div class="row" style="margin-left: auto; margin-right:auto; display-block">
+
+                <div class="col col-25">
+
+
+                    <span class="apple" ui-sref="ristoro()" id="myButton" style="margin-left:auto; margin-right:auto; display:block; width: 52px; height: 52px; text-align:center">
+                        <img src="img/ristoro.png" style="width:35px; display:block; margin-left:auto; margin-right:auto">
+                    </span>
+                    <p style="text-align:center; padding-top:4px;  font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff">Ristoro</p>
+                </div>
+                <div class="col col-25" style="">
+
+
+                    <span class="apple" id="myButton" ui-sref="shopping()" style="margin-left:auto; margin-right:auto; display:block; width: 52px; height: 52px; text-align:center">
+                        <img src="img/shoppingbag.png" style="width:35px; display:block; margin-left:auto; margin-right:auto">
+                    </span>
+                    <p style="text-align:center; padding-top:4px; font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff">Shopping</p>
+                </div>
+                <div class="col col-25" style="">
+
+
+                    <span class="apple" id="myButton" ui-sref="noleggio()" style="margin-left:auto; margin-right:auto; display:block; width: 52px; height: 52px; text-align:center">
+                        <img src="img/rent.png" style="width:35px; display:block; margin-left:auto; margin-right:auto">
+                    </span>
+                    <p style="text-align:center; padding-top:4px; font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff">Noleggio</p>
+                </div>
+                <!--
+    <div class="col col-25" style="">
+        
+    <span class="apple" id="myButton" ui-sref="dormire()" style="margin-left:auto; margin-right:auto; display:block; width: 52px; height: 52px; text-align:center"><img src="img/bed.png" style="width:35px; display:block; margin-left:auto; margin-right:auto"></span>
+    <p style="text-align:center; padding-top:4px; font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff">Dormire</p>
+    </div>
+-->
+                <div class="col col-25">
+
+
+                    <span class="apple" id="myButton" ui-sref="spiagge()" style="margin-left:auto; margin-right:auto; display:block; width: 52px; height: 52px; text-align:center">
+                        <img src="img/Beach-512.png" style="width:30px; display:block; margin-left:auto; margin-right:auto">
+                    </span>
+                    <p style="text-align:center; padding-top:4px;  font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff">Spiagge</p>
+                </div>
+            </div>
+            <div class="row" style="margin-left: auto; margin-right:auto; display-block">
+
+                <div class="col col-25">
+                    <span class="apple" ui-sref="orari()" id="myButton" style="margin-left:auto; margin-right:auto; display:block; width: 52px; height: 52px; text-align:center">
+                        <img src="img/orari.png" style="width:30px; display:block; margin-left:auto; margin-right:auto">
+                    </span>
+                    </a>
+                    <p style="text-align:center; padding-top:4px;  font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff; font-size:16px">Orari</p>
+                </div>
+                <div class="col col-25" style="">
+
+
+                    <span class="apple" id="myButton" ui-sref="libero()" style="margin-left:auto; margin-right:auto; display:block; width: 52px; height: 52px; text-align:center">
+                        <img src="img/freetime.png" style="width:35px; display:block; margin-left:auto; margin-right:auto">
+                    </span>
+                    <p style="text-align:center; padding-top:4px; font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff">Svago</p>
+                </div>
+                <div class="col col-25" style="">
+
+
+                    <span class="apple" id="myButton" ui-sref="nozze()" style="margin-left:auto; margin-right:auto; display:block; width: 52px; height: 52px;">
+                        <img src="img/37814.png" style="width:30px; display:block; margin-left:auto; margin-right:auto">
+                    </span>
+                    <p style="text-align:center; padding-top:4px; font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; font-size:15px; color:#fff">Nozze</p>
+                </div>
+                <div class="col col-25" style="">
+
+                    <span class="apple" id="myButton" ui-sref="night()" style="margin-left:auto; margin-right:auto; display:block; width: 52px; height: 52px; text-align:center">
+                        <img src="img/drink.png" style="width:30px; display:block; margin-left:auto; margin-right:auto">
+                    </span>
+                    <p style="text-align:center; padding-top:4px; font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff">By night
+                    </p>
+                </div>
+
+                <div class="col col-25">
+                    <span class="apple" ui-sref="orari()" id="myButton" style="margin-left:auto; margin-right:auto; display:block; width: 52px; height: 52px; text-align:center">
+                        <img src="img/orari.png" style="width:30px; display:block; margin-left:auto; margin-right:auto">
+                    </span>
+                    </a>
+                    <p style="text-align:center; padding-top:4px;  font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff; font-size:16px">Orari</p>
+                </div>
+            </div>
+            <div class="row" style="margin-left: auto; margin-right:auto; display-block">
+
+
+
+                <div class="col col-25" style="">
+                    <span class="apple" id="myButton" ui-sref="eventiisola()" style="margin-left:auto; margin-right:auto; display:block; width: 52px; height: 52px; text-align:center ">
+                        <img src="img/eventi.png" style="width:30px; display:block; margin-left:auto; margin-right:auto">
+                    </span>
+                    <p style="text-align:center; padding-top:4px; font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff">Eventi</p>
+                </div>
+
+                <div class="col col-25" style="">
+
+                    <span class="apple" id="myButton" ui-sref="termali()" style="margin-left:auto; margin-right:auto; display:block; width: 52px; height: 52px; text-align:center ">
+                        <img src="img/parchitermali.png" style="width:33px; display:block; margin-left:auto; margin-right:auto">
+                    </span>
+                    <p style="text-align:center; padding-top:4px; font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff; font-size:17px">Terme</p>
+                </div>
+                <div class="col col-25">
+                    <span class="apple" id="myButton" ui-sref="beauty()" style="margin-left:auto; margin-right:auto; display:block; width: 52px; height: 52px; text-align:center">
+                        <img src="img/beauty.png" style="width:30px; display:block; margin-left:auto; margin-right:auto">
+                    </span>
+                    <p style="text-align:center; padding-top:4px;  font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff; font-size:16px">Beauty</p>
+                </div>
+                <div class="col col-25">
+                    <span class="apple" id="myButton" ui-sref="elettronica()" style="margin-left:auto; margin-right:auto; display:block; width: 52px; height: 52px; text-align:center">
+                        <img src="img/elettronica.png" style="width:33px; display:block; margin-left:auto; margin-right:auto">
+                    </span>
+                    <p style="text-align:center; padding-top:4px;  font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff; font-size:14px">Hi-Tech</p>
+                </div>
+            </div>
+
+
+            <div class="row" style="margin-left: auto; margin-right:auto; display-block">
+
+                <!--
+            <div class="col col-25" >
+                <span class="apple" id="myButton" ui-sref ="casa()"  style="margin-left:auto; margin-right:auto; display:block; width: 52px; height: 52px; text-align:center"><img src="img/casa.png" style="width:33px; display:block; margin-left:auto; margin-right:auto"></span>
+                <p style="text-align:center; padding-top:4px;  font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff">Casa</p>
+                </div>   
+            -->
+
+
+
+                <!--
+                    <div class="col col-25" >
+        
+                            <span class="apple" id="myButton"  ui-sref="autosoccorso()" style="margin-left:auto; margin-right:auto; display:block; width: 52px; height: 52px; text-align:center"><img src="img/meccanico.png" style="width:33px; display:block; margin-left:auto; margin-right:auto"></span>
+                            <p style="text-align:center; padding-top:4px;  font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff; font-size:14px">Auto-Soccorso</p>
+                        </div>   -->
+                <div class="col col-25" style="">
+
+                    <span class="apple" id="myButton" ui-sref="cinema()" style="margin-left:auto; margin-right:auto; display:block; width: 52px; height: 52px; text-align:center ">
+                        <img src="img/cinema.png" style="width:33px; display:block; margin-left:auto; margin-right:auto">
+                    </span>
+                    <p style="text-align:center; padding-top:4px; font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff; font-size:17px">Cinema/Teatro</p>
+                </div>
+
+                <div class="col col-25">
+
+                    <span class="apple" id="myButton" ui-sref="meteo()" style="margin-left:auto; margin-right:auto; display:block; width: 52px; height: 52px; text-align:center">
+                        <img src="img/meteo.png" style="width:33px; display:block; margin-left:auto; margin-right:auto">
+                    </span>
+                    <p style="text-align:center; padding-top:4px;  font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff; font-size:14px">Meteo</p>
+                </div>
+                <div class="col col-25">
+                    <span class="apple" id="myButton" ui-sref="gite()" style="margin-left:auto; margin-right:auto; display:block; width: 52px; height: 52px; text-align:center">
+                        <img src="img/escursioni.png" style="width:36px; display:block; margin-left:auto; margin-right:auto">
+                    </span>
+                    <p style="text-align:center; padding-top:4px;  font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff; font-size:16px">Transfer</p>
+                </div>
+                <div class="col col-25">
+                    <span class="apple" id="myButton" ui-sref="sanitari()" style="margin-left:auto; margin-right:auto; display:block; width: 52px; height: 52px; text-align:center">
+                        <img src="img/sanitari.png" style="width:33px; display:block; margin-left:auto; margin-right:auto">
+                    </span>
+                    <p style="text-align:center; padding-top:4px;  font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff">Servizi Sanitari</p>
+                </div>
+            </div>
+
+            <div class="row" style="margin-left: auto; margin-right:auto; display-block">
+
+                <!--    <div class="col col-25" >
+                    <span class="apple" id="myButton" ui-sref ="wifi()"  style="margin-left:auto; margin-right:auto; display:block; width: 52px; height: 52px; text-align:center"><img src="img/wifi.png" style="width:33px; display:block; margin-left:auto; margin-right:auto"></span>
+                    <p style="text-align:center; padding-top:4px;  font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff">Wi-Fi</p>
+                    </div>  
+          
+          
+            
+          <div class="col col-25" style="">
+                    
+                                    <span class="apple" id="myButton" ui-sref ="zampe()"   style="margin-left:auto; margin-right:auto; display:block; width: 52px; height: 52px; text-align:center "><img src="img/animali.png" style="width:33px; display:block; margin-left:auto; margin-right:auto"></span>
+                                    <p style="text-align:center; padding-top:4px; font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff; font-size:17px">Quattro Zampe</p>
+                                    </div>	 -->
+
+            </div>
+
+
+
+            <div class="row" style="margin-left: auto; margin-right:auto; display-block">
+
+
+
+                <div class="col col-25">
+                    <span class="apple" ui-sref="infoutili()" id="myButton" ui-sref="servizi()" style="margin-left:auto; margin-right:auto; display:block; width: 52px; height: 52px; text-align:center">
+                        <img src="img/info.png" style="width:36px; display:block; margin-left:auto; margin-right:auto">
+                    </span>
+                    <p style="text-align:center; padding-top:4px;  font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff; font-size:16px">Info Utili</p>
+                </div>
+
+                <div class="col col-25">
+                    <span class="apple" id="myButton" ui-sref="scommesse()" style="margin-left:auto; margin-right:auto; display:block; width: 52px; height: 52px; text-align:center">
+                        <img src="img/scommesse.png" style="width:33px; display:block; margin-left:auto; margin-right:auto">
+                    </span>
+                    <p style="text-align:center; padding-top:4px;  font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff; font-size:12px">Scommesse</p>
+                </div>
+                <div class="col col-25">
+                    <span class="apple" id="myButton" ui-sref="monumenti()" style="margin-left:auto; margin-right:auto; display:block; width: 52px; height: 52px; text-align:center">
+                        <img src="img/scommesse.png" style="width:33px; display:block; margin-left:auto; margin-right:auto">
+                    </span>
+                    <p style="text-align:center; padding-top:4px;  font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff; font-size:12px">Monumenti</p>
+                </div>
+                <div class="col col-25">
+                    <span class="apple" id="myButton" ui-sref="porti()" style="margin-left:auto; margin-right:auto; display:block; width: 52px; height: 52px; text-align:center">
+                        <img src="img/scommesse.png" style="width:33px; display:block; margin-left:auto; margin-right:auto">
+                    </span>
+                    <p style="text-align:center; padding-top:4px;  font-family: 'Palatino Linotype';  font-size: 20px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff; font-size:18px">Porti</p>
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="row" style="margin-left: auto; margin-right:auto; height:30px; display-block">
+                <div class="col col-25">
+                </div>
+
+                <div class="col col-25">
+                </div>
+
+                <div class="col col-25">
+
+                </div>
+            </div>
+        </div>
+
+
+    </ion-content>
+
+
+    <ion-footer-bar style="height:70px !important; padding:0px; background-color:#b8b8b8; border-top: #b8b8b8; width:100% ">
+
+
+
+        <div class="row" style="width:100%; margin-left: 0px;">
+
+            <div class="" style="width:20%">
+
+                <a style="text-decoration:none" ui-sref="chiSiamo()">
+                    <img src="img/TabHome.png" style="width:55px; display:block; margin-left:auto; margin-right:auto">
+                </a>
+                <p style="text-align:center; padding-top:4px;  font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff"></p>
+            </div>
+            <div class="" style="width:20%">
+
+
+                <a style="text-decoration:none" href="http://lozioconsiglia.altervista.org/market.php">
+                    <img src="img/TabCondividi.png" style="width:55px; display:block; margin-left:auto; margin-right:auto">
+                </a>
+                <p style="text-align:center; padding-top:4px; font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff"></p>
+            </div>
+            <div class="" style="width:20%">
+
+
+                <a style="text-decoration:none" href="http://lozioconsiglia.altervista.org/fb.php?id=https://www.facebook.com/isolaverdetvlive/">
+                    <img src="img/TabFb.png" style="width:55px; display:block; margin-left:auto; margin-right:auto">
+                </a>
+                <p style="text-align:center; padding-top:4px; font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff"></p>
+            </div>
+            <div class="" style="width:20%">
+
+                <a style="text-decoration:none" href="https://www.isolaverdetv.com/">
+                    <img src="img/news.png" style="width:55px; display:block; margin-left:auto; margin-right:auto">
+                </a>
+                <p style="text-align:center; padding-top:4px; font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff"></p>
+            </div>
+
+            <div class="" style="width:20%">
+
+                <a style="text-decoration:none" href="https://www.youtube.com/channel/UC1okD-ICtq4eLNofLYHwY-w">
+                    <img src="img/youtube.png" style="width:55px; display:block; margin-left:auto; margin-right:auto">
+                </a>
+                <p style="text-align:center; padding-top:4px; font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff"></p>
+            </div>
+        </div>
+
+    </ion-footer-bar>
+
+</ion-view>

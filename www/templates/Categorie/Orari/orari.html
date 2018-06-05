@@ -1,0 +1,305 @@
+w
+<ion-view id="page3">
+
+  <ion-content padding="false" class="has-header" style="background-image:url(img/background.jpg);">
+
+    <div class="list list-inset" style="border-radius:8px">
+      <div class="row">
+        <div class="" style="width:5%"></div>
+        <div class="" style="width:90%">
+          <h4 style="text-align:center; color:#2F2F2F">
+            <strong>Partenza:
+              <strong>
+          </h4>
+          <label class="item item-input">
+            <select class="item item-input" ng-model="data.partenza" style="width:80%; margin-right:auto; margin-left:auto; display:block">
+              <option value="tuttoischia">Isola di Ischia</option>
+              <option value="Ischia" style="margin-left:5px">Porto di Ischia</option>
+              <option value="Casamicciola">Porto di Casamicciola</option>
+              <option value="Forio">Porto di Forio</option>
+              <option value="tuttonapoli">Napoli e Provincia</option>
+              <option value="Napoli Molo B.">Napoli Molo Beverello</option>
+              <option value="Napoli Porta di M.">Napoli Porta Nova</option>
+              <option value="Pozzuoli">Pozzuoli</option>
+              <option value="Procida">Procida</option>
+              <option value="Sorrento">Sorrento</option>
+            </select>
+          </label>
+
+          <h4 style="text-align:center; color:#2F2F2F">
+            <strong>Destinazione:
+              <strong>
+          </h4>
+          <label class="item item-input">
+              <select class="item item-input" ng-model="data.destinazione" style="width:80%; margin-right:auto; margin-left:auto; display:block">
+                  <option value="tuttoischia">Isola di Ischia</option>
+                  <option value="Ischia" style="margin-left:5px">Porto di Ischia</option>
+                  <option value="Casamicciola">Porto di Casamicciola</option>
+                  <option value="Forio">Porto di Forio</option>
+                  <option value="tuttonapoli">Napoli e Provincia</option>
+                  <option value="Napoli Molo B.">Napoli Molo Beverello</option>
+                  <option value="Napoli Porta di M.">Napoli Porta Nova</option>
+                  <option value="Pozzuoli">Pozzuoli</option>
+                  <option value="Procida">Procida</option>
+                  <option value="Sorrento">Sorrento</option>
+                </select>
+          </label>
+
+      
+          <div class="row">
+          <button ng-click="oggi()"  type="button" class="button button-block" style="float:left;background-color:#f28f20; width:25%; padding:0px; color:white; margin-left:auto; margin-right:auto; display:block;">
+              <b>Oggi</b>
+            </button>
+            <button ng-click="domani()"  type="button" class="button button-block" style="background-color:#f28f20; width:40%; padding:0px; color:white; margin-left:auto; margin-right:auto; display:block;">
+              <b>Domani</b>
+            </button>
+            <button ng-click="orario()"  type="button" class="button button-block" style="background-color:#f28f20; width:20%; padding:0px; color:white; margin-left:auto; margin-right:auto; display:block;">
+                <b>Tutte</b>
+              </button>
+            </div>
+        </div>
+        <div class="" style="width:5%"></div>
+      </div>
+
+    </div>
+
+
+    <div style="background-color:green; color:white; border-radius:8px; width:80%; height:250px; margin-left:auto; margin-right:auto;  padding:10px 10px 10px 10px">
+      <div class="row">
+        <div style="width:40%; height:40px;">
+          <p style="text-align:center">
+            <b style="font-size:115%">Ischia</b>
+          </p>
+
+        </div>
+        <div style="width:20%;height:40px;">
+          <p style="">
+            <b style="font-size:40px">&rarr;</b>
+          </p>
+        </div>
+        <div style="width:40%;height:40px;">
+          <p style="text-align:center">
+            <b style="font-size:115%">Napoli Molo B.</b>
+          </p>
+        </div>
+
+      </div>
+      <div class="row">
+      <button ui-sref="ischianapolimolooggi()" type="button" class="button button-block" style="float:left;background-color:#f28f20; width:25%; padding:0px; color:white; margin-left:auto; margin-right:auto; display:block;">
+        <b>Oggi</b>
+      </button>
+      <button ui-sref="ischianapolimolodomani()" type="button" class="button button-block" style="background-color:#f28f20; width:40%; padding:0px; color:white; margin-left:auto; margin-right:auto; display:block;">
+        <b>Domani</b>
+      </button>
+      <button ui-sref="ischianapolimolo()" type="button" class="button button-block" style="background-color:#f28f20; width:20%; padding:0px; color:white; margin-left:auto; margin-right:auto; display:block;">
+          <b>Tutte</b>
+        </button>
+    </div>
+
+      <div class="row">
+        <div style="width:40%; height:40px;">
+          <p style="text-align:center">
+            <b style="font-size:115%">Napoli Molo B.</b>
+          </p>
+        </div>
+        <div style="width:20%;height:40px;">
+          <p style="">
+            <b style="font-size:40px">&rarr;</b>
+          </p>
+        </div>
+        <div style="width:40%;height:40px;">
+          <p style="text-align:center">
+            <b style="font-size:115%">Ischia</b>
+          </p>
+        </div>
+
+      </div>
+      <div class="row">
+          <button ui-sref="napolimoloischiaoggi()" type="button" class="button button-block" style="float:left;background-color:#f28f20; width:25%; padding:0px; color:white; margin-left:auto; margin-right:auto; display:block;">
+            <b>Oggi</b>
+          </button>
+          <button ui-sref="napolimoloischiadomani()" type="button" class="button button-block" style="background-color:#f28f20; width:40%; padding:0px; color:white; margin-left:auto; margin-right:auto; display:block;">
+            <b>Domani</b>
+          </button>
+          <button ui-sref="napolimoloischia()" type="button" class="button button-block" style="background-color:#f28f20; width:20%; padding:0px; color:white; margin-left:auto; margin-right:auto; display:block;">
+              <b>Tutte</b>
+            </button>
+        </div>
+    </div>
+    <div style="background-color:#347ed1; margin-top: 10px; color:white; border-radius:8px; width:80%; height:250px; margin-left:auto; margin-right:auto;  padding:10px 10px 10px 10px">
+        <div class="row">
+          <div style="width:40%; height:40px;">
+            <p style="text-align:center">
+              <b style="font-size:115%">Ischia</b>
+            </p>
+  
+          </div>
+          <div style="width:20%;height:40px;">
+            <p style="">
+              <b style="font-size:40px">&rarr;</b>
+            </p>
+          </div>
+          <div style="width:40%;height:40px;">
+            <p style="text-align:center">
+              <b style="font-size:115%">Pozzuoli</b>
+            </p>
+          </div>
+  
+        </div>
+        <div class="row">
+        <button ui-sref="ischiapozzuolioggi()" type="button" class="button button-block" style="float:left;background-color:#f28f20; width:25%; padding:0px; color:white; margin-left:auto; margin-right:auto; display:block;">
+          <b>Oggi</b>
+        </button>
+        <button ui-sref="ischiapozzuolidomani()" type="button" class="button button-block" style="background-color:#f28f20; width:40%; padding:0px; color:white; margin-left:auto; margin-right:auto; display:block;">
+          <b>Domani</b>
+        </button>
+        <button ui-sref="ischiapozzuoli()" type="button" class="button button-block" style="background-color:#f28f20; width:20%; padding:0px; color:white; margin-left:auto; margin-right:auto; display:block;">
+            <b>Tutte</b>
+          </button>
+      </div>
+  
+        <div class="row">
+          <div style="width:40%; height:40px;">
+            <p style="text-align:center">
+              <b style="font-size:115%">Pozzuoli</b>
+            </p>
+          </div>
+          <div style="width:20%;height:40px;">
+            <p style="">
+              <b style="font-size:40px">&rarr;</b>
+            </p>
+          </div>
+          <div style="width:40%;height:40px;">
+            <p style="text-align:center">
+              <b style="font-size:115%">Ischia</b>
+            </p>
+          </div>
+  
+        </div>
+        <div class="row">
+            <button ui-sref="pozzuoliischiaoggi()" type="button" class="button button-block" style="float:left;background-color:#f28f20; width:25%; padding:0px; color:white; margin-left:auto; margin-right:auto; display:block;">
+              <b>Oggi</b>
+            </button>
+            <button ui-sref="pozzuoliischiadomani()" type="button" class="button button-block" style="background-color:#f28f20; width:40%; padding:0px; color:white; margin-left:auto; margin-right:auto; display:block;">
+              <b>Domani</b>
+            </button>
+            <button ="pozzuoliischia()" type="button" class="button button-block" style="background-color:#f28f20; width:20%; padding:0px; color:white; margin-left:auto; margin-right:auto; display:block;">
+                <b>Tutte</b>
+              </button>
+          </div>
+      </div>
+
+      <div style="background-color:#b62f2f;  margin-top: 10px;  color:white; border-radius:8px; width:80%; height:250px; margin-left:auto; margin-right:auto;  padding:10px 10px 10px 10px">
+          <div class="row">
+            <div style="width:40%; height:40px;">
+              <p style="text-align:center">
+                <b style="font-size:115%">Ischia</b>
+              </p>
+    
+            </div>
+            <div style="width:20%;height:40px;">
+              <p style="">
+                <b style="font-size:40px">&rarr;</b>
+              </p>
+            </div>
+            <div style="width:40%;height:40px;">
+              <p style="text-align:center">
+                <b style="font-size:115%">Procida</b>
+              </p>
+            </div>
+    
+          </div>
+          <div class="row">
+          <button ui-sref="ischiaprocidaoggi()" type="button" class="button button-block" style="float:left;background-color:#f28f20; width:25%; padding:0px; color:white; margin-left:auto; margin-right:auto; display:block;">
+            <b>Oggi</b>
+          </button>
+          <button ui-sref="ischiaprocidadomani()" type="button" class="button button-block" style="background-color:#f28f20; width:40%; padding:0px; color:white; margin-left:auto; margin-right:auto; display:block;">
+            <b>Domani</b>
+          </button>
+          <button ui-sref="ischiaprocida()" type="button" class="button button-block" style="background-color:#f28f20; width:20%; padding:0px; color:white; margin-left:auto; margin-right:auto; display:block;">
+              <b>Tutte</b>
+            </button>
+        </div>
+    
+          <div class="row">
+            <div style="width:40%; height:40px;">
+              <p style="text-align:center">
+                <b style="font-size:115%">Procida</b>
+              </p>
+            </div>
+            <div style="width:20%;height:40px;">
+              <p style="">
+                <b style="font-size:40px">&rarr;</b>
+              </p>
+            </div>
+            <div style="width:40%;height:40px;">
+              <p style="text-align:center">
+                <b style="font-size:115%">Ischia</b>
+              </p>
+            </div>
+    
+          </div>
+          <div class="row">
+              <button ui-sref="procidaischiaoggi()" type="button" class="button button-block" style="float:left;background-color:#f28f20; width:25%; padding:0px; color:white; margin-left:auto; margin-right:auto; display:block;">
+                <b>Oggi</b>
+              </button>
+              <button ui-sref="procidaischiadomani()" type="button" class="button button-block" style="background-color:#f28f20; width:40%; padding:0px; color:white; margin-left:auto; margin-right:auto; display:block;">
+                <b>Domani</b>
+              </button>
+              <button ui-sref="procidaischia()" type="button" class="button button-block" style="background-color:#f28f20; width:20%; padding:0px; color:white; margin-left:auto; margin-right:auto; display:block;">
+                  <b>Tutte</b>
+                </button>
+            </div>
+        </div>
+
+
+  </ion-content>
+
+  <ion-footer-bar style="height:70px !important; padding:0px; background-color:#b8b8b8; border-top: #b8b8b8; ">
+    <ion-toolbar position="bottom" style="width:100%">
+
+
+      <div class="row" style="width:100%; margin-left: 0px;">
+
+        <div class="" style="width:20%">
+
+          <a style="text-decoration:none" ui-sref="chiSiamo()">
+            <img src="img/TabHome.png" style="width:55px; display:block; margin-left:auto; margin-right:auto">
+          </a>
+          <p style="text-align:center; padding-top:4px;  font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff"></p>
+        </div>
+        <div class="" style="width:20%">
+
+
+          <a style="text-decoration:none" href="http://lozioconsiglia.altervista.org/market.php">
+            <img src="img/TabCondividi.png" style="width:55px; display:block; margin-left:auto; margin-right:auto">
+          </a>
+          <p style="text-align:center; padding-top:4px; font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff"></p>
+        </div>
+        <div class="" style="width:20%">
+
+
+          <a style="text-decoration:none" href="http://lozioconsiglia.altervista.org/fb.php?id=https://www.facebook.com/isolaverdetvlive/">
+            <img src="img/TabFb.png" style="width:55px; display:block; margin-left:auto; margin-right:auto">
+          </a>
+          <p style="text-align:center; padding-top:4px; font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff"></p>
+        </div>
+        <div class="" style="width:20%">
+
+          <a style="text-decoration:none" href="https://www.isolaverdetv.com/">
+            <img src="img/news.png" style="width:55px; display:block; margin-left:auto; margin-right:auto">
+          </a>
+          <p style="text-align:center; padding-top:4px; font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff"></p>
+        </div>
+
+        <div class="" style="width:20%">
+
+          <a style="text-decoration:none" href="https://www.youtube.com/channel/UC1okD-ICtq4eLNofLYHwY-w">
+            <img src="img/youtube.png" style="width:55px; display:block; margin-left:auto; margin-right:auto">
+          </a>
+          <p style="text-align:center; padding-top:4px; font-family: 'Palatino Linotype';  font-size: 14px; font-weight:bold; text-shadow: 2px 2px 8px #413201; color:#fff"></p>
+        </div>
+      </div>
+    </ion-toolbar>
+  </ion-footer-bar>
+</ion-view>

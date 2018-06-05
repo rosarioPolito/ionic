@@ -1,0 +1,37 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "it.enjinia.avisnicosia"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "it.enjinia.avisnicosia"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "it.enjinia.avisnicosia"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "it.enjinia.avisnicosia"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "it.enjinia.avisnicosia"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "it.enjinia.avisnicosia"
+        },
+        "pushbots-cordova-plugin": {
+            "PACKAGE_NAME": "it.enjinia.avisnicosia"
+        }
+    },
+    "dependent_plugins": {
+        "es6-promise-plugin": {
+            "PACKAGE_NAME": "it.enjinia.avisnicosia"
+        }
+    }
+}

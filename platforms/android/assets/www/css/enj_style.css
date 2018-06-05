@@ -1,0 +1,202 @@
+/*$positive: #2A388F;
+@import "../www/lib/ionic/scss";
+ red avis color #ed1c24
+blue avis color #2a388f
+*/
+
+.apple {
+  box-shadow: 0px 10px 14px -7px rgb(0, 0, 0);
+  background: #f28f20;
+  border-radius: 25px; display: inline-block; cursor: pointer;
+  font-family: Arial; 
+  font-size: 20px;
+  font-weight: bold; 
+  padding: 10px 9px;
+  text-decoration: none; text-shadow: 0px 1px 0px rgb(255, 153, 0);
+}
+.apple:hover {
+box-shadow: 0px 10px 14px -7px rgb(0, 0, 0); 
+border-radius: 25px; display: inline-block; cursor: pointer; 
+background: #ef154b;
+font-family: Arial; 
+font-size: 20px; font-weight: bold; 
+
+text-decoration: none; text-shadow: 0px 1px 0px rgb(255, 153, 0); 
+}
+.icon_tab {
+	color: #fff !important;
+  text-decoration:none;
+}
+
+.ionic-body {
+	    font-family: 'Open Sans', sans-serif !important;
+}
+
+.text_space {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 18px;
+  color: #2a388f;
+  text-align: justify;
+}
+
+.text_date {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 18px;
+  color: #2a388f;
+	font-weight: 800;
+	text-align: justify;
+}
+
+.text_event {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 18px !important;
+    color: #2a388f;
+    font-weight: 800;
+    text-align: justify;
+}
+
+.text_news {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 16px;
+  color: #2a388f;
+}
+
+.text_profile {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 17px !important;
+	line-height: 140% !important;
+  color: #2a388f !important;
+}
+
+.text_ema {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 19px !important;
+	line-height: 140% !important;
+  color: #2a388f !important;
+}
+
+.text_praier {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 18px;
+  font-style: italic;
+  color: #2a388f;
+  text-align: center;
+}
+
+.text_contact {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 20px;
+  color: #2a388f;
+}
+
+h2.praier{
+  color: #2a388f;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+}
+
+h4.praier{
+  color: #2a388f;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+}
+
+.img-responsive{
+  max-width: 100%;
+  height: auto;
+}
+
+a.item-content {
+  font-family: 'Open Sans', sans-serif !important;
+  color: #902727;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.item-complex .item-content, .item-radio .item-content {
+    position: relative;
+    z-index: 2;
+    padding: 16px 49px 16px 16px;
+    
+    background-color: #fff;
+}
+
+.tabs-striped.tabs-stable .tab-item.tab-item-active, .tabs-striped.tabs-stable .tab-item.active, .tabs-striped.tabs-stable .tab-item.activated {
+    margin-top: -2px;
+    color: #444;
+    border-style: solid;
+    border-width: 2px 0 0 0;
+    border-color: #2a388f;
+}
+span.tab-title.ng-binding{
+  font-weight: 600;
+}
+
+
+.card-background-page {
+
+  ion-card {
+    position: relative;
+    text-align: center;
+  }
+
+  .card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    color: #fff;
+  }
+
+}
+.button.button-calm {
+    border-color: transparent;
+    background-color: #2367de;
+    color: #fff;
+}
+
+.button.button-calm.active, .button.button-calm.activated  {
+    border-color: transparent;
+    background-color: #71a1f5;
+    color: #fff;
+}
+
+.button.button-calm3 {
+    border-color: transparent;
+    background-color: #4267B2;
+    color: #fff;
+}
+
+.button.button-calm3.active, .button.button-calm3.activated  {
+    border-color: transparent;
+    background-color: #254381;
+    color: #fff;
+}
+.button.button-calm2 {
+    border-color: transparent;
+    background-color: #fb5353; color:#fff
+}
+
+.button.button-calm2.active, .button.button-calm2.activated  {
+    border-color: transparent;
+    background-color: #c63d3d; color:#fff
+}
+
+/*.bar .button.back-button, .bar button.back-button {
+    display:none;
+    margin-right: 5px;
+    padding: 0;
+    white-space: nowrap;
+    font-weight: 400;
+}*/

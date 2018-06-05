@@ -1,0 +1,16 @@
+<ion-view title="{{myData.title}}" id="page4">
+  <ion-content padding="true" class="has-header">
+          <h3 style="color:#2a388f;font-weight:bold;">{{myData.title}}</h3>
+          <p>Pubblicato: {{myData.data | amCalendar}}</p>
+        <span ng-if="myData.image_0">
+          <img class="full-image" ng-src="http://avis-nicosia.enjinia.it/uploads/{{myData.image_0}}">
+        </span>
+          <p class="text_news">{{myData.content}}</p>
+        <span ng-if="myData.image_1">
+          <img class="full-image" ng-src="http://avis-nicosia.enjinia.it/uploads/{{myData.image_1}}">
+        </span>
+        <span ng-if="myData.image_2">
+          <img class="full-image" ng-src="http://avis-nicosia.enjinia.it/uploads/{{myData.image_2}}">
+        </span>
+    </ion-content>
+</ion-view>

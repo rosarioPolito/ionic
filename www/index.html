@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+
+
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="css/ionic.app.css" rel="stylesheet">
+    <link href="css/enj_style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style type="text/css">
+    .notIE {
+    position: relative;
+    display: inline-block;
+}
+
+select {
+    display: inline-block;
+    height:30px;
+    width: 100%;
+    padding: 2px 2px 2px 2px;
+    outline: none;
+    color: #74646e;
+    border: 1px solid #C8BFC4;
+    border-radius: 4px;
+    box-shadow: inset 1px 1px 2px #ddd8dc;
+    background: #fff; 
+}
+
+/* Select arrow styling */
+.notIE .fancyArrow {
+    width: 23px;
+    height: 28px;
+    position: absolute;
+    display: inline-block;
+    top: 1px;
+    right: 3px;
+    background: url(http://www.stackoverflow.com/favicon.ico) right / 90%  no-repeat #fff;
+    pointer-events: none;
+    
+}
+
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 2px solid #ddd;
+    padding: 8px;
+    max-width: 150px;
+}
+
+#customers tr{background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+/*target Internet Explorer 9 and Internet Explorer 10:*/
+@media screen and (min-width:0\0) { 
+    .notIE .fancyArrow
+    {
+        display:none;
+    }
+}
+
+      .platform-ios .manual-ios-statusbar-padding{
+        padding-top:20px;
+      }
+      .manual-remove-top-padding{
+        padding-top:0px;
+      }
+      .manual-remove-top-padding .scroll{
+        padding-top:0px !important;
+      }
+      ion-list.manual-list-fullwidth div.list, .list.card.manual-card-fullwidth {
+        margin-left:-10px;
+        margin-right:-10px;
+      }
+      ion-list.manual-list-fullwidth div.list > .item, .list.card.manual-card-fullwidth > .item {
+        border-radius:0px;
+        border-left:0px;
+        border-right: 0px;
+      }
+      .show-list-numbers-and-dots ul{
+        list-style-type: disc;
+        padding-left:40px;
+      }
+      .show-list-numbers-and-dots ol{
+        list-style-type: decimal;
+        padding-left:40px;
+      }
+    </style>
+
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/routes.js"></script>
+
+    <script src="js/directives.js"></script>
+    <script src="js/services.js"></script>
+
+    <script src="lib/moment/min/moment.min.js"></script>
+    <script src="lib/moment/locale/it.js"></script>
+    <script src="lib/angular-moment/angular-moment.min.js"></script>
+
+    <!-- Only required for Tab projects w/ pages in multiple tabs
+    <script src="lib/ionicuirouter/ionicUIRouter.js"></script>
+    -->
+
+  </head>
+  <body ng-app="app" animation="slide-left-right-ios7">
+
+
+
+  <div>
+  <ion-side-menus enable-menu-with-back-views="true" data-componentid="side-menu21" >
+    <!-- enable-menu-with-back-views per default è su FALSE e quindi il menu hamburger non esce
+    nelle pagine child. In quest'app ad esempio non uscirebbe sulla login e sul profilo. Mettendolo
+    a TRUE invece il burgher menu esce sempre -->
+    <ion-side-menu-content>
+      <ion-header-bar class="bar-positive2 bar-header" style="background-color:#b2b2b2; border-color:#b2b2b2" align-title="center"><div class="title title-center header-item"><span class="nav-bar-title">
+        <img src="http://lozioconsiglia.altervista.org/lozioconsiglia2.png" style="width:280px; padding-top:5px; margin-left:auto; margin-right:auto; display:block">
+
+
+    </span></div>
+  </ion-header-bar>
+      <ion-nav-view>
+
+      </ion-nav-view>
+    </ion-side-menu-content>
+   <ion-side-menu side="left" id="side-menu21">
+      <ion-header-bar class="bar-positive">
+        <div class="title">Menu</div>
+      </ion-header-bar>
+      <ion-content ng-controller="menuCtrl" padding="false" class="side-menu-left has-header ">
+        <ion-list id="menu-list1" data-componentid="list1">
+          <ion-item id="menu-list-item4" ui-sref="ristoro()" menu-close="" data-componentid="list-item4">Ristoro</ion-item>
+          <ion-item id="menu-list-item5" ui-sref="shopping()" menu-close="" data-componentid="list-item5">Shopping</ion-item>
+          <ion-item id="menu-list-item6" ui-sref="noleggio()" menu-close="" data-componentid="list-item6">Noleggio</ion-item>
+          <ion-item id="menu-list-item7" ui-sref="spiagge()" menu-close="" data-componentid="list-item7">Spiagge</ion-item>
+          <ion-item id="menu-list-item8" ui-sref="orari()" menu-close="" data-componentid="list-item8">Orari</ion-item>
+          <ion-item id="menu-list-item9" ui-sref="libero()" menu-close="" data-componentid="list-item10">Svago</ion-item>
+          <ion-item id="menu-list-item10" ui-sref="nozze()" menu-close="" data-componentid="list-item10">Nozze</ion-item>
+          <ion-item id="menu-list-item8" ui-sref="night()" menu-close="" data-componentid="list-item8">By Night</ion-item>
+          <ion-item id="menu-list-item9" ui-sref="eventiisola()" menu-close="" data-componentid="list-item10">Eventi</ion-item>
+          <ion-item id="menu-list-item10" ui-sref="termali()" menu-close="" data-componentid="list-item10">Terme</ion-item>
+          <ion-item id="menu-list-item8" ui-sref="beauty()" menu-close="" data-componentid="list-item8">Beauty</ion-item>
+          <ion-item id="menu-list-item9" ui-sref="elettronica()" menu-close="" data-componentid="list-item10">Elettronica</ion-item>
+          <ion-item id="menu-list-item10" ui-sref="cinema()" menu-close="" data-componentid="list-item10">Cinema/Teatri</ion-item>
+       <ion-item id="menu-list-item8" ui-sref="gite()" menu-close="" data-componentid="list-item8">Gite</ion-item>
+          <ion-item id="menu-list-item9" ui-sref="sanitari()" menu-close="" data-componentid="list-item10">Sanitari</ion-item>
+          <ion-item id="menu-list-item10" ui-sref="infoutili()" menu-close="" data-componentid="list-item10">Info Utili</ion-item>
+          <ion-item id="menu-list-item8" ui-sref="scommesse()" menu-close="" data-componentid="list-item8">Scommesse</ion-item>
+          <ion-item id="menu-list-item9" ui-sref="monumenti()" menu-close="" data-componentid="list-item10">Monumenti</ion-item>
+          <ion-item id="menu-list-item10" ui-sref="porti()" menu-close="" data-componentid="list-item10">Porti</ion-item>
+       
+        </ion-list>
+        <img class="img-responsive" src="http://lozioconsiglia.altervista.org/lozioconsiglia2.png" style="width:80%;margin-left:auto; margin-right:auto; display:block;padding-top:20px;; padding-bottom:20px">
+
+      </ion-content>
+    </ion-side-menu>
+  </ion-side-menus>
+</div>
+
+
+
+
+  </body>
+</html>

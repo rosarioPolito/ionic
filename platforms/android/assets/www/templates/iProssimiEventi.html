@@ -1,0 +1,16 @@
+<ion-view title="I prossimi eventi" id="page3">
+  <ion-content padding="true" class="has-header">
+<div>
+    <img class="full-image" src="img/staticmap.png" style="margin-bottom:10px;">
+    <p class="text_date"> Se vuoi donare il sangue vieni nella nostra sede in <b style="color:red !important">Vicolo del Mercato 8, Nicosia</b>, nelle date indicate di seguito: </p>
+</div>
+<div ng-repeat="donation in donations">
+    <div class="list card">
+      <div class="item">
+        <p class="text_event">{{donation.donazione | amDateFormat:'dddd, D MMMM YYYY'}}</p>
+
+      </div>
+    </div>
+</div>
+  </ion-content>
+</ion-view>
